@@ -134,6 +134,7 @@ gulp.task('serve', gulp.series('clean',
     'js',
     'css',
     'font',
+    'html',
     'image'),
   'browser'));
 
@@ -143,5 +144,6 @@ gulp.task('default', gulp.series('serve'));
 gulp.task('build', gulp.series('clean', 
         'js', 
         'css',
+        'html',
         'font',
         'image'));
