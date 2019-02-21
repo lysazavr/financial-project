@@ -744,14 +744,267 @@ video {
 }
 
 .twitter-contact {
+    position: relative;
     max-width: 1191px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
+    line-height: 27px;
+    & span {
+        color: #fff;
+        & a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.twitter-contact::before {
+    position: absolute;
+    content: url('../img/twitter.png');
+    top: 0px;
+    left: 37px;
 }
 
 .twitter-link {
     color: #fff;
     text-decoration: none;
+}
+
+.footer-info {
+    background-color: #313131;
+    padding: 86px 0 84px 0;
+}
+
+.site-footer-nav {
+    max-width: 1191px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.site-footer-copyright {
+    background-color: #292929;
+    color: #6b6b6b;
+}
+
+.copyright {
+    padding: 25px 0 25px 0;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-links-list{
+    max-width:28%;
+}
+
+.footer-items {
+    display: inline;
+}
+
+.footer-list {
+    text-decoration: none;
+    color: #969595;
+    padding-right: 23px;
+    display: inline-block;
+}
+
+.header-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 36px;
+}
+
+.footer-item {
+    list-style-type: none;
+}
+
+.link-nav {
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    color: #969595;
+    line-height: 25px;
+}
+
+.link-nav:hover {
+    color: #fff;
+}
+
+.photo-news {
+    max-width: 63px;
+    max-height: 63px;
+    padding-right: 11px;
+}
+
+.photo-post {
+    font-family: 'Muli', sans-serif;
     font-size: 15px;
+    color: #fff;
+    display: inline-block;
+}
+
+.data-news {
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    color: #5c5c5c;
+    margin-bottom: 47px;
+}
+
+.container-news {
+    display: flex;
+}
+
+.footer-news {
+    max-width: 24%;
+}
+
+.mailing-post {
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #969595;
+    padding-bottom: 20px;
+}
+
+.finance-post {
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #969595;
+    padding-bottom: 20px;
+}
+
+.footer-mailing {
+    max-width: 25%;
+}
+
+.footer-finance {
+    max-width: 23%;
+}
+
+.contact-link,
+.phone-number,
+.location {
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    color: #969595;
+}
+
+.email,
+.phone {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    border-top: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.address {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    border-top: 1px solid #3c3c3c;
+}
+
+.address:before {
+    content: url("../img/location.png");
+    padding-right: 18px;
+    vertical-align: sub;
+    float: left;
+}
+
+.location {
+    display: inline;
+    text-align: right;
+}
+
+.phone:before {
+    content: url("../img/phone.png");
+    padding-right: 12px;
+    vertical-align: sub;
+}
+
+.phone-number {
+    display: inline;
+}
+
+.email:before {
+    content: url("../img/email.png");
+    padding-right: 10px;
+    vertical-align: sub;
+}
+
+.contact-link {
+    display: inline;
+}
+
+.email-input {
+    padding: 11px 0 12px 20px;
+    color: #afafaf;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    margin-right: 7px;
+}
+
+.button-form {
+    background-color: #009688;
+    border: none;
+    margin-bottom: 2px;
+    border: 3px solid #fff;
+    height: 4px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-48deg);
+    height: 10px;
+    vertical-align: super;
+}
+
+.btn-wrapper {
+    display: inline-block;
+    padding: 12px 13px 12px 13px;
+    background-color: #009688;
+    vertical-align: top;
+}
+
+.post-form {
+    padding-top: 12px;
+    color: #6b6b6b;
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+}
+
+.twitter-footer,
+.google,
+.facebook,
+.linkedin,
+.youtube,
+.instagram {
+    display: inline-block;
+    background-color: #2e2e2e;
+    padding: 9px 13px 9px 13px;
+    margin: 46px 8px 0 0;
+}
+.instagram{
+    margin-right:0;
+}
+.footer-social:hover {
+    color:#fff;
+    background-color: #31aae2;
+    
+}
+
+
+.social-links {
+    color: #6b6b6b;
+    text-decoration: none;
 }
